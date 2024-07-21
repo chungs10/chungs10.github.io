@@ -1,0 +1,339 @@
+body{
+  
+    /* fallback for old browsers */
+    background: #ffffff;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(226, 247, 228, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(226, 247, 228, 0.5))
+  
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+header{
+
+}
+.navbar{
+padding: 20px 0;
+}
+.navbar-light{
+
+}
+
+
+
+
+.menu{
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+   padding: 0 10px;
+}
+
+.menu_profile{
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+   padding: 0 10px;
+}
+.menu:after{
+    content: "";
+    position: absolute;
+    background-color:#E99D3E ;
+    height: 3px;
+    width: 0;
+    left:0;
+    bottom:-10px;
+    transition: 0.3s;
+
+
+
+
+}
+
+.menu:hover:after{
+    width: 100%;
+
+
+}
+
+
+.menu:focus{
+    width: 100%;
+    font-weight: bold;
+}
+
+
+
+.menu_profile:focus{
+    width: 100%;
+    font-weight: bold;
+}
+
+
+
+.sub_title{
+text-align: center;
+}
+.title{
+text-align: center;
+}
+
+.underline{
+background-color: #E99D3E;
+height: 4px;
+width: 80px;
+margin: auto;
+}
+
+#underline_kitchen{
+background-color: #E99D3E;
+height: 4px;
+width: 80px;
+margin: auto;
+margin-bottom: 20px;
+}
+.food_group{
+background-color: green;
+border-color: green;
+}
+
+.food_group:hover{
+    background-color: green;
+    
+    }
+
+
+
+
+
+.add_item{
+background-color: #E99D3E; 
+color: white;
+
+}
+
+#food_group_dairy:focus{
+    background-color: #E99D3E;
+    border:#E99D3E;
+   }
+   
+   #food_group_fruits:focus{
+       background-color: #E99D3E;
+       border:#E99D3E;
+      }
+   
+   #food_group_vegetables:focus{
+       background-color: #E99D3E;
+       border: #E99D3E;
+      }
+   
+   
+      #food_group_grains:focus{
+       background-color: #E99D3E;
+       border:#E99D3E;
+      }
+   
+      #food_group_protien:focus{
+       background-color: #E99D3E;
+       border:#E99D3E;
+      }
+
+
+      .good_alerts{
+          background-color: #E2F7E4;
+      }
+
+      .bad_alerts{
+          background-color: #ff6b64;
+      }
+
+
+      
+        table {
+            background-color: white;
+           
+            border-collapse: separate;
+            border-spacing: 0;
+            box-shadow: 0px 0px 36px 15px rgba(0, 0, 0, 0.10);
+            
+          
+      }
+
+      .signup{
+        background: rgb(175,184,186);
+       
+        border:none;
+        border-radius: 20px;
+        background: rgba(75, 75, 74, 1.0);
+        
+        background: linear-gradient(to right, rgba(75, 75, 74, 1.0), rgba(0, 0, 0, 1.0));
+
+
+    
+
+
+
+
+
+
+      }
+
+
+      .login{
+        background: rgb(175,184,186);
+        background: linear-gradient(to right, rgba(75, 75, 74, 1.0), rgba(0, 0, 0, 1.0));
+        border:none;
+        border-radius: 20px;
+        margin-left: 5px;
+    }
+    #modal-label {
+        float: right;
+        background-color: #fff;
+        text-decoration-color: black;
+        border-color:  #79E14E;
+    }
+    .change{
+        background-color: green;
+        border:green;
+    }
+
+
+    .change:hover{
+        background-color: green;
+    }
+/* Float Shadow */
+#hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  #hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  #hvr-float-shadow:hover, #hvr-float-shadow:focus, #hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  #hvr-float-shadow:hover:before, #hvr-float-shadow:focus:before, #hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+  /* Grow Shadow */
+#hvr-grow-shadow {
+    /* display: inline-block; */
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  #hvr-grow-shadow:hover, #hvr-grow-shadow:focus, #hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    /* affects how large the content grows */
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+  }
+
+/* Curl Top Right */
+#hvr-curl-top-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  #hvr-curl-top-right:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    background: #E99D3E;
+    /* IE9 */
+    background: linear-gradient(225deg, #f0b670 45%, #aaa 50%, #ccc 56%, white 80%);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+  }
+  #hvr-curl-top-right:hover:before, #hvr-curl-top-right:focus:before, #hvr-curl-top-right:active:before {
+    width: 10px;
+    height: 10px;
+  }
+/* Black Curl Top Right */
+#bhvr-curl-top-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  #bhvr-curl-top-right:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    background: #252524;
+    /* IE9 */
+    background: linear-gradient(225deg, #797975 45%, #aaa 50%, #ccc 56%, white 80%);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+  }
+  #bhvr-curl-top-right:hover:before, #bhvr-curl-top-right:focus:before, #bhvr-curl-top-right:active:before {
+    width: 10px;
+    height: 10px;
+  }
+
+
+
+    
+    

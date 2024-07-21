@@ -1,0 +1,13 @@
+svg {
+  display: block;
+  transition: ease-in-out 0.4s;
+}
+svg:hover {
+  fill: #e4622e;
+  transition: ease-in-out 0.2s;
+}
+
+svg#TopLogo:hover {
+  fill: #499d7b;
+  transition: ease-in-out 0.25s;
+}

@@ -1,0 +1,30 @@
+svg#addButton:hover{
+    stroke: #E4622E
+}
+
+.AddButton_Div {
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    left: 13vw;
+    top: 68vh;
+}
+
+.Pencil_Div {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    left: 70vw;
+    top: 46vh;
+}
+
+.Inkpad_Div {
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    left: 24vw;
+    top: 64vh;
+}
+h2 {
+    text-align: center;
+}

@@ -1,0 +1,146 @@
+.typeInput input {
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  height: 24px;
+  background-color: #fdf3de;
+  width: 390px;
+  font-family: Kumbh Sans;
+  padding: 2px 8px;
+  transition: ease-in-out 0.3s;
+}
+.typeInput input:hover {
+  scale: 1.04;
+  transform: translateY(2px) translateX(5px);
+  transition: ease-in-out 0.3s;
+}
+.typeInput input:focus {
+  scale: 1.02;
+  transform: translateY(2px) translateX(5px);
+  transition: ease-in-out 0.3s;
+}
+
+body {
+  color: #4b4338;
+}
+.login button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 2px;
+  border-radius: 50px;
+  background-color: #e4622e;
+  border: 2px solid #e4622e;
+  font-family: Kumbh Sans;
+  color: #fdf3de;
+  padding: 5px 25px;
+  font-size: 18px;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.login button:hover {
+  background-color: #499d7b;
+  color: #fdf3de;
+  border: 2px solid #499d7b;
+  transition: ease-in-out 0.4s;
+  transform: translateY(5px);
+  cursor: pointer;
+}
+
+.login p {
+  font-size: 12px;
+  font-family: Kumbh Sans;
+  font-style: italic;
+  margin-bottom: 2px;
+  margin-top: 25px;
+}
+.login h3 {
+  color: #4b4338;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: 300;
+  margin-left: 5px;
+  margin-bottom: 35px;
+}
+
+#accountCreationImg {
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 380px;
+}
+input {
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 15px;
+    margin-top: 2px;
+    height: 24px;
+    background-color: #FDF3DE;
+    width: 390px;
+    font-family: Kumbh Sans;
+    padding: 2px 8px;
+    transition: ease-in-out 0.3s;
+}
+input:hover{
+    scale: 1.04;
+    transform: translateY(2px) translateX(5px);
+    transition: ease-in-out 0.3s;
+}
+input:focus{
+    scale: 1.02;
+    transform: translateY(2px) translateX(5px);
+    transition: ease-in-out 0.3s;
+}
+
+body {
+    color: #4B4338;
+}
+button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 2px;
+    border-radius: 50px;
+    background-color: #e4622e;
+    border: 2px solid #e4622e;
+    font-family: Kumbh Sans;
+    color: #FDF3DE;
+    padding: 5px 25px;
+    font-size: 18px;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button:hover {
+    background-color: #499D7B;
+    color: #FDF3DE;
+    border: 2px solid #499D7B;
+    transition: ease-in-out 0.4s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+p {
+    font-size: 12px;
+    font-family: Kumbh Sans;
+    font-style: italic;
+    margin-bottom: 2px;
+    margin-top: 25px;
+}
+h3 {
+   color: #4B4338;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-bottom: 35px;
+      
+}
+
+#accountCreationImg {
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: auto;
+}
