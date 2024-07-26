@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .carousel {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            display: none;
+            border-radius: 10px;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .summary {
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <img src="../snapshot/rcc-1.png" class="active" alt="Snapshot 1">
+        <img src="../snapshot/rcc-2.png" alt="Snapshot 2">
+        <img src="../snapshot/rcc-3.png" alt="Snapshot 2">
+        <img src="../snapshot/rcc-4.png" alt="Snapshot 2">
+        <img src="../snapshot/rcc-5.png" alt="Snapshot 2">
+        <!-- Add more snapshots as needed -->
+    </div>
+    <div class="summary">
+        <h2>Rensselaer Cybersecurity Collaboratory Project</h2>
+        <p>For the RCC of RPI, a club dedicated to researching and perfecting cybersecurity, we were tasked with three phases.
+            The first phase was a public facing website to advertise the Rensselaer Cyber Collaboratory and increase its presence
+            in the Internet aside from being just in RPI. Donation pages and Login pages were created so that certified personnel can
+            log in, although their functions were not expanded on for security reasons. Event page was created so that the RCC
+            would have an easier time coordinating events and also be able to invite other potential recruits into the RCC.
+            <br><br>
+            The second phase was the creation of the backend regarding the upload and viewing of Capture The Flag writeups. The RCC 
+            frequently participates in the National Cyber League, a cybersecurity competition. These writeups are to be practice for the
+            National Cyber League, giving users early practice. Uploading writeups made by other students and able to view them is the purpose
+            of Phase 2.
+            <br><br>
+            For Phase 3, it was the creation of the figma that showed the future frontend in conjunction with the backend created in 
+            Phase 2. This is the prototype blueprint for the final result of the site that would allow students and registered participants
+            to practice and perfect their cybersecurity skills for the National Cyber League. This site would include a list of writeups for students
+            to choose and topics for easy filtering along with a chat system that allowed fellow users to communicate with each others.
+        </p>
+        </p>
+            
+        </p>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 5000); // Change image every 3 seconds
+    </script>
+</body>
+</html>
