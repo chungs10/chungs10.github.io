@@ -6,69 +6,96 @@
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: url('photo/lights-prisms-effect-close-up.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-        }
+            body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: url('photo/lights-prisms-effect-close-up.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+    }
 
-        nav {
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            text-align: left;
-            z-index: 1000;
-        }
+    nav {
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-align: left;
+        z-index: 1000;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    nav a:hover {
+        text-decoration: underline;
+    }
 
+    header {
+        text-align: left;
+        padding: 50px 0;
+        margin-left: 20%;
+        margin-top: 60px; /* Offset for the fixed navbar */
+    }
+
+    .symbols {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .symbols img {
+        width: 50px;
+        margin: 0 10px;
+    }
+
+    #about-me {
+        position: relative; /* Changed to relative for better mobile compatibility */
+        top: 100px;
+        left: 20px;
+        width: calc(100% - 40px); /* Adjusted width for mobile, with some padding */
+        background-color: white;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-me h2 {
+        text-align: center;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media screen and (max-width: 768px) {
         header {
-            text-align: left;
-            padding: 50px 0;
-            margin-left: 20%;
-            margin-top: 60px; /* Offset for the fixed navbar */
-        }
-
-        .symbols {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .symbols img {
-            width: 50px;
-            margin: 0 10px;
+            margin-left: 5%;
+            padding: 30px 0;
+            margin-top: 60px; /* Keep offset for the fixed navbar */
         }
 
         #about-me {
-            position: fixed;
+            position: relative;
             top: 100px;
-            left: 20px;
-            width: 600px;
-            background-color: white;
-            color: black;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            left: 0;
+            width: 90%; /* Reduced width for smaller screens */
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for a cleaner mobile look */
         }
 
-        #about-me h2 {
+        nav a {
+            display: block;
+            margin: 10px 0;
             text-align: center;
         }
+    }
+
     </style>
 </head>
 <body>
@@ -85,17 +112,18 @@
     <section id="about-me">
         <h2>About Me</h2>
         <p>
-            Hello! I'm Raphael Chung, a recent ITWS major who just graduated from Rensselaer Polytechnic Institute. My journey into the world of IT started in high school with a fascination inspired by my friend's work in information security.
+            Hi there! I'm Raphael Chung, an Information Technology and Web Science (ITWS) graduate from Rensselaer Polytechnic Institute. My passion for IT began in high school, sparked by my friend's work in information security, which led me to pursue a career in the tech industry.
         </p>
         <p>
-            I've worked in full-stack development for my projects, proficient in a number of web development tools and constantly practicing the newest technologies in order to stay ahead of the industry. I'm also currently studying for my Security+ certification, so hit me up if you want to quiz each other.
+            I specialize in full-stack development, utilizing a wide range of web development tools to bring my projects to life. I'm dedicated to staying ahead in the industry by continuously learning and experimenting with the latest technologies. Currently, I'm preparing for the Security+ certification, and I’d love to connect with others interested in cybersecurity.
         </p>
         <p>
-            When not dealing with coding, I'm usually reading about new foods or diving into some books. I also play quite a few video games with friends or through LFG.
+            Outside of coding, I enjoy exploring new cuisines and immersing myself in a good book. I’m also an avid gamer, often teaming up with friends or joining LFG sessions.
         </p>
         <p>
-            Feel free to see my portfolio for the projects that I've worked on so far. Please don't be shy and feel free to reach out if you want to talk about anything!
+            Feel free to explore my portfolio to see the projects I've worked on. Don’t hesitate to reach out if you’d like to chat or collaborate on something exciting!
         </p>
     </section>
+    
 </body>
 </html>
