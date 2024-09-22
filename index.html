@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background: url('photo/lights-prisms-effect-close-up.jpg') no-repeat center center fixed;
+            font-family: 'Roboto', sans-serif;
+            background: url('photo/green_bg.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
         }
@@ -18,11 +19,10 @@
         header {
             text-align: left;
             padding: 50px 0;
-            margin-left:20%;
+            margin-left: 20%;
         }
 
         nav {
-            /* background-color: rgba(0, 0, 0, 0.7); */
             padding: 10px;
             position: fixed;
             top: 0;
@@ -36,7 +36,8 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
+            font-weight: 700; /* Bold for emphasis */
+            font-family: 'Roboto', sans-serif;
         }
 
         nav a:hover {
@@ -62,6 +63,22 @@
         #about-me h2 {
             text-align: center;
         }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+        }
+
+        header h2 {
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        header h3 {
+            font-size: 1.5em;
+            font-weight: 400;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -78,14 +95,9 @@
         <h3>Exploring the tech world, one project at a time. Always up for a challenge and a good conversation.</h3>
     </header>
 
-    
-
     <div class="symbols">
         <a href="https://github.com/chungs10"><img src="photo/logo.png" alt="GitHub"></a>
         <a href="https://www.linkedin.com/in/raphael-chung75/"><img src="photo/linkedin.png" alt="LinkedIn"></a>
     </div>
-
-    
-
 </body>
 </html>
