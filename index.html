@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Shun Hang Raphael Chung | Home</title>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-            background: url('photo/green_bg.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
+            background-color: white; /* Default background color */
+            color: black;
         }
 
-        header {
-            text-align: left;
-            padding: 50px 0;
-            margin-left: 20%;
+        /* For the gray background */
+        .gray-bg {
+            background-color: #f8f9fa; /* Matches the bg-light class */
         }
 
         nav {
@@ -28,6 +26,7 @@
             top: 0;
             left: 0;
             width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
             text-align: left;
             z-index: 1000;
         }
@@ -36,12 +35,59 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
-            font-weight: 700; /* Bold for emphasis */
-            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
         }
 
         nav a:hover {
             text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            color: black;
+        }
+
+        .title-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .title-card h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .title-card h2 {
+            font-size: 2em;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+
+        .title-card p {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #666;
+        }
+
+        .title-card a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .title-card a:hover {
+            background-color: #0056b3;
         }
 
         .symbols {
@@ -53,35 +99,10 @@
             width: 50px;
             margin: 0 10px;
         }
-
-        #about-me {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6);
-            margin: 20px;
-        }
-
-        #about-me h2 {
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3em;
-            font-weight: 700;
-        }
-
-        header h2 {
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        header h3 {
-            font-size: 1.5em;
-            font-weight: 400;
-            font-style: italic;
-        }
     </style>
 </head>
-<body>
+<body class="gray-bg">
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -89,10 +110,13 @@
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
     </nav>
+
     <header>
-        <h1>Shun Hang Raphael Chung</h1>
-        <h2>Information Technology Graduate</h2>
-        <h3>Exploring the tech world, one project at a time. Always up for a challenge and a good conversation.</h3>
+        <div class="title-card">
+            <h1>Shun Hang Raphael Chung</h1>
+            <h2>Information Technology Graduate</h2>
+            <p>Exploring the tech world, one project at a time. Always up for a challenge and a good conversation.</p>>
+        </div>
     </header>
 
     <div class="symbols">
