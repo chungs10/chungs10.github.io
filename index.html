@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shun Hang Raphael Chung | Home</title>
+    <title>Shun Hang Raphael Chung | Home & About Me</title>
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -11,13 +11,8 @@
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: white; /* Default background color */
+            background-color: #f8f9fa; /* Gray background */
             color: black;
-        }
-
-        /* For the gray background */
-        .gray-bg {
-            background-color: #f8f9fa; /* Matches the bg-light class */
         }
 
         nav {
@@ -99,6 +94,47 @@
             width: 50px;
             margin: 0 10px;
         }
+
+        #about-me {
+            background-color: white; /* White content box */
+            color: black; /* Black text inside the box */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 50px auto; /* Centered and spaced below the title card */
+            width: 80%; /* Adjust to fit the page nicely */
+        }
+
+        #about-me h2 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        #about-me p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 30px 0;
+                margin-top: 60px;
+            }
+
+            #about-me {
+                width: 90%;
+                padding: 15px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body class="gray-bg">
@@ -116,6 +152,7 @@
             <h1>Shun Hang Raphael Chung</h1>
             <h2>Information Technology Graduate</h2>
             <p>Exploring the tech world, one project at a time. Always up for a challenge and a good conversation.</p>
+            <a href="#about-me">Learn More About Me</a>
         </div>
     </header>
 
@@ -123,5 +160,26 @@
         <a href="https://github.com/chungs10"><img src="photo/logo.png" alt="GitHub"></a>
         <a href="https://www.linkedin.com/in/raphael-chung75/"><img src="photo/linkedin.png" alt="LinkedIn"></a>
     </div>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi there! I'm Raphael Chung, an Information Technology and Web Science (ITWS) graduate from Rensselaer Polytechnic Institute. My passion for IT began in high school, sparked by my friend's work in information security, which led me to pursue a career in the tech industry.
+        </p>
+        <p>
+            I specialize in several fields, including full-stack development, information security, and web development. I enjoy tackling challenges across these domains, whether it's building secure applications, protecting sensitive data, or bringing complex projects to life with the latest technologies.
+        </p>
+        <p>
+            I'm dedicated to staying at the forefront of the industry by continuously learning and experimenting with new technologies. Whether it's diving into cybersecurity strategies or refining my skills in cloud computing, I always strive to push my boundaries.
+        </p>
+        <p>
+            Outside of coding, I enjoy exploring new cuisines and immersing myself in a good book. I’m also an avid gamer, often teaming up with friends or joining LFG sessions.
+        </p>
+        <p>
+            Feel free to explore my portfolio to see the projects I've worked on. Don’t hesitate to reach out if you’d like to chat or collaborate on something exciting!
+        </p>
+    </section>
+    
+
 </body>
 </html>

@@ -39,9 +39,37 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        nav {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
     </style>
 </head>
 <body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../project.html">Projects</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
     <div class="carousel">
         <img src="../snapshot/rcc-1.png" class="active" alt="Snapshot 1">
         <img src="../snapshot/rcc-2.png" alt="Snapshot 2">
