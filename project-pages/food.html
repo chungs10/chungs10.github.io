@@ -20,11 +20,14 @@
             position: relative;
             width: 80%;
             max-width: 800px;
-            margin-top: 20px;
+            margin-top: 40px;
+            height: 400px; /* Set a fixed height */
+            overflow: hidden; /* Hide overflow to prevent image overflow */
         }
         .carousel img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover; /* Ensures the images cover the container without distortion */
             display: none;
             border-radius: 10px;
         }
@@ -80,9 +83,13 @@
     <div class="summary">
         <h2>Food Stock Management System</h2>
         <p>
-            My group developed a web application for managing food stock quantities, specifically focusing on initiating alerts for the donation of food items nearing their best-before dates. This project aimed to ensure that surplus food would be donated to underprivileged groups before spoilage. My primary role was developing the donation page and contributing to the login system using PHP. The system was built using HTML, CSS, JavaScript, and PHP, ensuring functionality for both front-end and back-end operations.
+            This project was focused on developing a web application to efficiently manage food stocks and help prevent food waste. The application generates alerts when food items are nearing their expiration dates, encouraging donations to underprivileged groups before spoilage occurs.
+            <br><br>
+            My team and I worked on both the front-end and back-end of the system, ensuring seamless integration between user interfaces and database functionality. My primary contribution was building the donation page, where users could register food items for donation. I also helped develop the login system using PHP for user authentication and access control.
+            <br><br>
+            The system was designed with scalability in mind, and we incorporated various technologies, including PHP, JavaScript, HTML, and CSS, to handle data interactions and ensure a responsive, user-friendly experience.
         </p>
-        <p>Technologies used: PHP, HTML, CSS, JavaScript.</p>
+        <p><strong>Technologies used:</strong> PHP, HTML, CSS, JavaScript.</p>
     </div>
 
     <script>

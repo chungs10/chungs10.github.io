@@ -21,10 +21,13 @@
             width: 80%;
             max-width: 800px;
             margin-top: 20px;
+            height: 400px; /* Set a fixed height */
+            overflow: hidden; /* Hide overflow to prevent image overflow */
         }
         .carousel img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover; /* Ensures the images cover the container without distortion */
             display: none;
             border-radius: 10px;
         }
@@ -41,27 +44,24 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         nav {
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: left;
-    z-index: 1000;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: left;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -74,9 +74,9 @@ nav a:hover {
     <div class="carousel">
         <img src="../snapshot/rcc-1.png" class="active" alt="Snapshot 1">
         <img src="../snapshot/rcc-2.png" alt="Snapshot 2">
-        <img src="../snapshot/rcc-3.png" alt="Snapshot 2">
-        <img src="../snapshot/rcc-4.png" alt="Snapshot 2">
-        <img src="../snapshot/rcc-5.png" alt="Snapshot 2">
+        <img src="../snapshot/rcc-3.png" alt="Snapshot 3">
+        <img src="../snapshot/rcc-4.png" alt="Snapshot 4">
+        <img src="../snapshot/rcc-5.png" alt="Snapshot 5">
         <!-- Add more snapshots as needed -->
     </div>
     <div class="summary">
@@ -96,9 +96,6 @@ nav a:hover {
             Phase 2. This is the prototype blueprint for the final result of the site that would allow students and registered participants
             to practice and perfect their cybersecurity skills for the National Cyber League. This site would include a list of writeups for students
             to choose and topics for easy filtering along with a chat system that allowed fellow users to communicate with each others.
-        </p>
-        </p>
-            
         </p>
     </div>
 

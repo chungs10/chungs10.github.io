@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Showcase: Intro to IT project</title>
+    <title>Project Showcase: Intro to IT Project</title>
     <link rel="icon" href="photo/favi.png">
     <style>
         body {
@@ -20,11 +20,14 @@
             position: relative;
             width: 80%;
             max-width: 800px;
-            margin-top: 20px;
+            margin-top: 50px;
+            height: 400px; /* Set a fixed height */
+            overflow: hidden; /* Hide overflow to prevent image overflow */
         }
         .carousel img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover; /* Ensures the images cover the container without distortion */
             display: none;
             border-radius: 10px;
         }
@@ -76,11 +79,15 @@
         <img src="../snapshot/game-3.png" alt="Snapshot 3">
     </div>
     <div class="summary">
-        <h2>Introduction to IT project: Simulation game of Crashing into Mars</h2>
+        <h2>Introduction to IT Project: Simulation Game of Crashing into Mars</h2>
         <p>
-            This project was to test our basics into web development. My group of two created a web-based game that simulated a person's chances of survival during a crash on Mars. We utilized both javascript and HTML to create the function of our game and utilized CSS to make it look more appealing
+            This project was part of an introductory IT course, where we were tasked with applying our basic web development skills to build an interactive web-based game. My group of two decided to create a simulation game that challenges the player to survive a crash landing on Mars.
+            <br><br>
+            The gameplay involves managing resources and making decisions to improve the chances of survival in the harsh Martian environment. The game was developed using HTML, CSS, and JavaScript, combining front-end design and basic game logic to create a simple but engaging user experience.
+            <br><br>
+            During development, we focused on building a visually appealing user interface using CSS, while JavaScript was used to handle the game mechanics such as tracking resources and determining outcomes based on player choices. The project served as a great learning experience in applying programming concepts in a practical and fun way.
         </p>
-        <p>Technologies used: HTML, CSS, Javascript.</p>
+        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript.</p>
     </div>
 
     <script>

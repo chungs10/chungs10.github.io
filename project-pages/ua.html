@@ -20,11 +20,14 @@
             position: relative;
             width: 80%;
             max-width: 800px;
-            margin-top: 20px;
+            margin-top: 40px;
+            height: 400px; /* Set a fixed height */
+            overflow: hidden; /* Hide overflow to prevent image overflow */
         }
         .carousel img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover; /* Ensures the images cover the container without distortion */
             display: none;
             border-radius: 10px;
         }
@@ -80,8 +83,13 @@
     <div class="summary">
         <h2>United Airlines Cargo Weight and Balance Evaluation</h2>
         <p>
-            In collaboration with three team members, I contributed to the development of a web application for United Airlines designed to evaluate the weight and balance of an aircraft's cargo hold. My primary role involved designing and developing the frontend using HTML, CSS, and JavaScript to create a user-friendly interface. Additionally, I contributed to the backend using Python, ensuring the seamless processing of cargo data. This project combined several technologies, including HTML, CSS, JavaScript, and Python, to deliver an efficient and secure solution.
+            This project involved developing a proof of concept web application for United Airlines to evaluate the safety of cargo at the beginning of the trip. The goal was to ensure that cargo placement would comply with safety regulations, optimize aircraft performance, and reduce cargo damage.
+            <br><br>
+            I worked closely with three other team members, where I played a significant role in designing and developing the frontend interface. Using HTML, CSS, and JavaScript, I ensured that the user experience was intuitive and responsive. I also collaborated on the backend using Python, where I helped integrate the python code into the frontend that allowed us to detect fire supression lines.
+            <br><br>
+            The project was a great opportunity to combine various technologies to meet real-world aviation needs. We applied a full-stack approach, ensuring smooth interactions between frontend design and backend functionality.
         </p>
+        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python.</p>
     </div>
 
     <script>
