@@ -9,7 +9,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 43px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -44,32 +44,64 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         nav {
-            padding: 10px;
+            height: 30px;
+            padding-top: 17px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            text-align: center;
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            text-align: left;
             z-index: 1000;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
+
+        .nav-tabs {
+            display: inline-flex;
+            background-color: transparent;
+            border: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-tabs .nav-item {
             margin: 0 15px;
+        }
+
+        .nav-tabs .nav-link {
+            color: white;
             font-weight: bold;
+            border: none;
+            border-radius: 0;
+            padding: 15px 0;
         }
-        nav a:hover {
-            text-decoration: underline;
+
+        .nav-tabs .nav-link:hover,
+        .nav-tabs .nav-link.active {
+            color: #007bff;
+            background-color: transparent;
+            border-bottom: 2px solid #007bff;
         }
+
+
     </style>
 </head>
 <body>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="../project.html">Projects</a>
-        <a href="../resume.html">Resume</a>
-        <a href="../contact.html">Contact</a>
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+        </ul>
     </nav>
     <div class="carousel">
         <img src="../snapshot/rcc-1.png" class="active" alt="Snapshot 1">
