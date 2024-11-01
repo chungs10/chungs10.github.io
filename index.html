@@ -12,41 +12,59 @@
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa; /* Gray background */
+            background-color: #f8f9fa;
             color: black;
         }
 
         nav {
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            text-align: left;
-            z-index: 1000;
-        }
+    height: 50px; /* Set fixed height for a smaller navbar */
+    padding: 0; /* Remove any additional padding */
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+.nav-tabs {
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+    list-style: none;
+    padding: 0; /* Remove padding for uniform size */
+    margin: 0;
+}
 
-        nav a:hover {
-            text-decoration: underline;
+.nav-tabs .nav-item {
+    margin: 0 15px;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    padding: 15px 0; /* Adjust padding for a smaller appearance */
+}
+
+
+        .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
+            color: #007bff;
+            background-color: transparent;
+            border-bottom: 2px solid #007bff;
         }
 
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 80px 0 50px; /* Adjusted for fixed navbar height */
             color: black;
         }
 
         .title-card {
             background-color: white;
-            padding: 30px;
+            padding: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: inline-block;
@@ -72,23 +90,23 @@
             color: #666;
         }
 
-        .title-card a {
+        /* .title-card a {
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 10px;
             background-color: #007bff;
             color: white;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .title-card a:hover {
             background-color: #0056b3;
-        }
+        } */
 
         .symbols {
             text-align: center;
-            margin: 20px 0;
+            margin: 0px 0;
         }
 
         .symbols img {
@@ -97,13 +115,13 @@
         }
 
         #about-me {
-            background-color: white; /* White content box */
-            color: black; /* Black text inside the box */
-            padding: 20px;
+            background-color: white;
+            color: black;
+            padding: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 50px auto; /* Centered and spaced below the title card */
-            width: 80%; /* Adjust to fit the page nicely */
+            margin: 30px auto;
+            width: 80%;
         }
 
         #about-me h2 {
@@ -130,21 +148,34 @@
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
-            nav a {
+            .nav-tabs {
                 display: block;
+            }
+
+            .nav-tabs .nav-item {
                 margin: 10px 0;
                 text-align: center;
             }
         }
     </style>
 </head>
-<body class="gray-bg">
+<body>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="project.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
     </nav>
 
     <header>
@@ -152,14 +183,14 @@
             <h1>Shun Hang Raphael Chung</h1>
             <h2>Information Technology Graduate</h2>
             <p>Exploring the tech world, one project at a time. Always up for a challenge and a good conversation.</p>
-            <a href="#about-me">Learn More About Me</a>
+            <div class="symbols">
+                <a href="https://github.com/chungs10"><img src="photo/logo.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/raphael-chung75/"><img src="photo/linkedin.png" alt="LinkedIn"></a>
+            </div>
         </div>
     </header>
 
-    <div class="symbols">
-        <a href="https://github.com/chungs10"><img src="photo/logo.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/raphael-chung75/"><img src="photo/linkedin.png" alt="LinkedIn"></a>
-    </div>
+    
 
     <section id="about-me">
         <h2>About Me</h2>
@@ -179,7 +210,6 @@
             Feel free to explore my portfolio to see the projects I've worked on. Don’t hesitate to reach out if you’d like to chat or collaborate on something exciting!
         </p>
     </section>
-    
 
 </body>
 </html>

@@ -4,45 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shun Hang Raphael Chung | Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="photo/favi.png">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa; /* Light gray background */
-            color: black; /* Change text color to black */
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: black;
         }
 
         nav {
-            padding: 10px;
+            height: 50px; /* Set fixed height for a smaller navbar */
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            text-align: center;
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            text-align: left;
             z-index: 1000;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+        .nav-tabs {
+            display: inline-flex;
+            background-color: transparent;
+            border: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        .nav-tabs .nav-item {
+            margin: 0 15px;
+        }
+
+        .nav-tabs .nav-link {
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 0;
+            padding: 15px 0;
+        }
+
+        .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
+            color: #007bff;
+            background-color: transparent;
+            border-bottom: 2px solid #007bff;
         }
 
         .contact-content {
-            margin-top: 60px; /* Margin to avoid overlap with the navbar */
-            padding: 10px; /* Reduced padding */
-            width: 60%; /* Adjusted width for a tighter fit */
-            max-width: 1000px; /* Reduced max-width */
-            background-color: white; /* White background for the contact box */
+            margin-top: 60px;
+            padding: 10px;
+            width: 60%;
+            max-width: 1000px;
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin-left: auto;
@@ -50,13 +68,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: calc(100vh - 120px); /* Full height minus top margin and padding */
+            min-height: calc(100vh - 120px);
         }
 
         .contact-content h2 {
             text-align: center;
             margin-bottom: 20px;
-            color: black; /* Changed to black */
+            color: black;
         }
 
         .google-form {
@@ -67,21 +85,48 @@
 
         .google-form iframe {
             width: 100%;
-            height: 500px; /* Set a fixed height */
+            height: 500px;
             border: none;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media screen and (max-width: 768px) {
+            .contact-content {
+                width: 90%;
+                padding: 15px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-tabs {
+                display: block;
+            }
+
+            .nav-tabs .nav-item {
+                margin: 10px 0;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="project.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+        </ul>
     </nav>
 
     <div class="contact-content">
-        <h2>Contact Me</h2>
         <div class="google-form">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegw2qQnyFhQYGH8xEYOA436273wowUAzXxSeQs30CYL1gdzg/viewform?usp=sf_link" title="Raphael Chung's Contact Form"></iframe>
         </div>
